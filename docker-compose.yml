@@ -1,0 +1,10 @@
+---
+version: '2'
+services:
+  stepup-cli:
+    build: .
+    image: 'kawamanza/stepup-cli'
+    volumes:
+      - .:/app
+      - ~/.ssh:/root/.ssh
+      - ~/.gitconfig:/root/.gitconfig
